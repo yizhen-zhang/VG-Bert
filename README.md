@@ -5,13 +5,13 @@ This repository is the official implementation of [Explainable Semantic Space by
 ## Requirements
 
 Python version: 3.7.4. 
-numpy==1.17.2
-scipy==1.3.1
-torch==1.7.1
-torchvision==0.8.2
-transformers==4.2.1
-Pillow==6.2.0
-tokenizers==0.9.4
+`numpy==1.17.2`
+`scipy==1.3.1`
+`torch==1.7.1`
+`torchvision==0.8.2`
+`transformers==4.2.1`
+`Pillow==6.2.0`
+`tokenizers==0.9.4`
 
 ## Training
 
