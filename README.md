@@ -1,6 +1,8 @@
 # Visually Grounded Bert Model
 
-This repository is the official implementation of [Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning]
+This repository is the official implementation of: 
+
+- Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning
 
 ## Requirements
 
