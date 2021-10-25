@@ -1,4 +1,4 @@
-# Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning
+# Visually Grounded Bert Model
 
 This repository is the official implementation of [Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning]
 
@@ -50,7 +50,7 @@ python run.py \
 --exp-dir /output-directory/two-stream-pretraining/
 ```
 
-# stage-3: visual relational grounding on Visual Genome dataset:
+### stage-3: visual relational grounding on Visual Genome dataset:
 ```
 python run.py \
 --stage relational_grounding \
@@ -73,7 +73,7 @@ python run.py \
 --base-model-learnable-layers 2 \
 --load-pretrained /directory-to-pretrain-two-stream-model/ \
 --exp-dir /output-directory/relational-grounding/
-
+```
 ### Transfer learning for cross-modal image search:
 ```
 python transfer_cross_modal_retrieval.py \
