@@ -1,26 +1,18 @@
-# Visually Grounded Bert Model
+# Visually Grounded Bert Language Model
 
-This repository is the official implementation of: 
+This repository is the official implementation of [Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning](https://openreview.net/forum?id=ljOg2HIBDGH).
 
-- Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning
+To cite this work:
+
+
+### Abstract
+In natural language processing, most models try to learn semantic representa- tions merely from texts. The learned representations encode the “distributional semantics” but fail to connect to any knowledge about the physical world. In contrast, humans learn language by grounding concepts in perception and action and the brain encodes “grounded semantics” for cognition. Inspired by this notion and recent work in vision-language learning, we design a two-stream model for grounding language learning in vision. The model includes a VGG-based visual stream and a Bert-based language stream. The two streams merge into a joint representational space. Through cross-modal contrastive learning, the model first learns to align visual and language representations with the MS COCO dataset. The model further learns to retrieve visual objects with language queries through a cross-modal attention module and to infer the visual relations between the retrieved objects through a bilinear operator with the Visual Genome dataset. After training, the model’s language stream is a stand-alone language model capable of embedding concepts in a visually grounded semantic space. This semantic space manifests principal dimensions explainable with human intuition and neurobiological knowl- edge. Word embeddings in this semantic space are predictive of human-defined norms of semantic features and are segregated into perceptually distinctive clusters. Furthermore, the visually grounded language model also enables compositional language understanding based on visual knowledge and multimodal image search with queries based on images, texts, or their combinations.
 
 ## Requirements
 
-Python version: 3.7.4. 
+The model was trained with Python version: 3.7.4.
 
-`numpy==1.17.2`
-
-`scipy==1.3.1`
-
-`torch==1.7.1`
-
-`torchvision==0.8.2`
-
-`transformers==4.2.1`
-
-`Pillow==6.2.0`
-
-`tokenizers==0.9.4`
+`numpy==1.17.2, scipy==1.3.1, torch==1.7.1, torchvision==0.8.2, transformers==4.2.1, Pillow==6.2.0, tokenizers==0.9.4`
 
 ## Training
 
@@ -38,6 +30,9 @@ python visual_stream_pretraining.py \
 ```
 
 ### stage-2: two-stream grounding on MS COCO dataset with corss-modal contrastive loss:
+
+![visual grounding of natural language](figures/model_structure_horizontal.jpg?raw=true)
+
 ```
 python run.py \
 --stage two_stream_pretraining \
@@ -60,6 +55,9 @@ python run.py \
 ```
 
 ### stage-3: visual relational grounding on Visual Genome dataset:
+
+![visual grounding of natural language](figures/finetune_structure.jpg?raw=true)
+
 ```
 python run.py \
 --stage relational_grounding \
@@ -107,4 +105,4 @@ python transfer_cross_modal_retrieval.py \
 ```
 
 ## Evaluation
-See two jupyter notebooks in `evaluation/script`.
+We include the jupyter notebook scripts for running evaluation tasks in our paper. See README in `evaluation/`.
