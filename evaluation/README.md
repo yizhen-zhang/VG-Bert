@@ -2,7 +2,7 @@
 
 ### PCA analysis
 
-<img src="figures/concrete_abstract_grounded.jpg" width="400">
+<img src="figures/concrete_abstract_grounded.jpg" width="750">
 
 
 | Group         | Bert  | Grounded | Relational Grounded |
@@ -14,7 +14,7 @@ The human-rated concreteness [[1]](#1) for words in SemCat dataset [[2]](#2), th
 
 ### Multimodal image search
 
-<img src="figures/cross_modal_search_horizontal.jpg" width="400">
+<img src="figures/cross_modal_search_horizontal.jpg" width="700">
 
 See how to run this expriment in `script/cross_modal_image_search.ipynb`
 
