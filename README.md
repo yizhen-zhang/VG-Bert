@@ -31,7 +31,7 @@ python visual_stream_pretraining.py \
 
 ### stage-2: two-stream grounding on MS COCO dataset with corss-modal contrastive loss:
 
-![visual grounding of natural language](figures/model_structure_horizontal.jpg?raw=true)
+<img src="figures/model_structure_horizontal.jpg" width="400">
 
 ```
 python run.py \
@@ -56,7 +56,7 @@ python run.py \
 
 ### stage-3: visual relational grounding on Visual Genome dataset:
 
-![visual grounding of natural language](figures/finetune_structure.jpg?raw=true)
+<img src="figures/finetune_structure.jpg" width="400">
 
 ```
 python run.py \
