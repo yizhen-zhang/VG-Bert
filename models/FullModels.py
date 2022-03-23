@@ -60,7 +60,7 @@ class RelationalGrounding(nn.Module):
 
 class TransferCrossModalRetrieval(nn.Module):
     def __init__(self, image_model, language_model, cross_attention_model, embedding_dim=768, metric_dim=768, sigma=0.1):
-        super(TrasferCrossModalRetrieval, self).__init__()
+        super(TransferCrossModalRetrieval, self).__init__()
         self.image_model = image_model
         self.language_model = language_model
         self.cross_attention_model = cross_attention_model
